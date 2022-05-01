@@ -4,14 +4,7 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="823ce9f3-5723-4fef-b29b-27d0c34a0193" name="Changes" comment="">
-      <change beforePath="$PROJECT_DIR$/Java/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/Java/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Java/src/Pedidos/ArtefactosElec.java" beforeDir="false" afterPath="$PROJECT_DIR$/Java/src/Pedidos/ArtefactosElec.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Java/src/Pedidos/Main.java" beforeDir="false" afterPath="$PROJECT_DIR$/Java/src/Pedidos/Main.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Java/src/Pedidos/Muebles.java" beforeDir="false" afterPath="$PROJECT_DIR$/Java/src/Pedidos/Muebles.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Java/src/Pedidos/Productos.java" beforeDir="false" afterPath="$PROJECT_DIR$/Java/src/Pedidos/Productos.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Java/src/Pedidos/ropaYcalzado.java" beforeDir="false" afterPath="$PROJECT_DIR$/Java/src/Pedidos/ropaYcalzado.java" afterDir="false" />
-    </list>
+    <list default="true" id="823ce9f3-5723-4fef-b29b-27d0c34a0193" name="Changes" comment="" />
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
@@ -56,7 +49,7 @@
       <workItem from="1651334018994" duration="288000" />
       <workItem from="1651334319576" duration="2303000" />
       <workItem from="1651373461629" duration="1003000" />
-      <workItem from="1651375396632" duration="387000" />
+      <workItem from="1651375396632" duration="700000" />
     </task>
     <servers />
   </component>
