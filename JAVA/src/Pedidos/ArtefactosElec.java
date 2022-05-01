@@ -2,9 +2,9 @@ package Pedidos;
 
 public class ArtefactosElec extends Productos {
 
-        public ArtefactosElec(String codigo, String nombreProd, double precio, int stock) {
-            super(codigo, nombreProd, precio, stock);
-        }
+    public ArtefactosElec(String codigo, String nombreProd, double precio) {
+        super(codigo, nombreProd, precio);
+    }
 
         @Override
         public String toString() {

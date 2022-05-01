@@ -1,36 +1,26 @@
 package Pedidos;
 // se agrego el avanze de Abel
 public abstract class Productos {
-    private String tipoP;
     private String codigo;
     private String nombreProd;
     private double precio;
-    private int stock;
-
+    private String tipoProducto;
 
     public Productos() {
     }
 
-    public Productos(String codigo, String nombreProd, double precio, int stock) {
+    public Productos(String codigo, String nombreProd, double precio) {
         this.codigo = codigo;
         this.nombreProd = nombreProd;
         this.precio = precio;
-        this.stock = stock;
+        establecerTipoProducto();
     }
 
-    public Productos(String tipoP, String codigo, String nombreProd, double precio, int stock) {
-        this.tipoP = tipoP;
-        this.codigo = codigo;
-        this.nombreProd = nombreProd;
-        this.precio = precio;
-        this.stock = stock;
+    public String getTipoProducto() {
+        return tipoProducto;
     }
 
-    public String getTipoP() {
-        return tipoP;
-    }
-
-    public String getCodigo() {
+    public String getCodigo(){
         return codigo;
     }
 
@@ -42,19 +32,35 @@ public abstract class Productos {
         return precio;
     }
 
-    public int getStock() {
-        return stock;
-    }
+
+
 
     @Override
     public String toString() {
         return "Productos{" +
-                "clasificacionP='" + tipoP + '\'' +
-                ", codigo='" + codigo + '\'' +
+                "codigo='" + codigo + '\'' +
                 ", nombreProd='" + nombreProd + '\'' +
                 ", precio=" + precio +
-                ", stock=" + stock +
+                ", tipoProducto='" + tipoProducto + '\'' +
                 '}';
+    }
+
+    public void establecerTipoProducto() {
+        if (codigo.contains("AE")) {
+            tipoProducto = "Artefactos";
+        } else if (codigo.contains("RC")) {
+            tipoProducto = "Ropa";
+        } else
+            tipoProducto = "Muebles";
+    }
+
+
+    public boolean validarProducto() {
+        if (this.codigo != null) {
+            return true;
+        }else {
+            return false;
+        }
     }
 
 }
