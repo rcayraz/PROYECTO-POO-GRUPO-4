@@ -1,18 +1,35 @@
 package Pedidos;
 
-import java.lang.invoke.StringConcatException;
-import java.util.Date;
-import java.util.Random;
+import java.util.ArrayList;
+import java.util.List;
 
 public class Pedidos  {
     private String CodigoPedido;
     private String PedidosRealizado;
     private String Estados;
+    private  Productos productos;
+    private List<Productos> ListaProductos;
 
     public Pedidos(String codigoPedido, String pedidosRealizado, String estados) {
         CodigoPedido = codigoPedido;
         PedidosRealizado = pedidosRealizado;
         Estados = estados;
+        productos = productos;
+        ListaProductos = new ArrayList<>();
+
+
+
+    }
+
+    @Override
+    public String toString() {
+        return "Pedidos{" +
+                "CodigoPedido='" + CodigoPedido + '\'' +
+                ", PedidosRealizado='" + PedidosRealizado + '\'' +
+                ", Estados='" + Estados + '\'' +
+                ", productos=" + productos +
+                ", ListaProductos=" + ListaProductos +
+                '}';
     }
 
     public String getCodigoPedido() {
@@ -39,15 +56,30 @@ public class Pedidos  {
         Estados = estados;
     }
 
-    @Override
-    public String toString() {
-        return "Pedidos{" +
-                "CodigoPedido='" + CodigoPedido + '\'' +
-                ", PedidosRealizado='" + PedidosRealizado + '\'' +
-                ", Estados='" + Estados + '\'' +
-                '}';
+    public Productos getProductos() {
+        return productos;
     }
-    public boolean ValidarPedido(){
-        return true;
+
+    public void setProductos(Productos productos) {
+        this.productos = productos;
+    }
+
+    public List<Productos> getListaProductos() {
+        return ListaProductos;
+    }
+
+    public void setListaProductos(List<Productos> listaProductos) {
+        ListaProductos = listaProductos;
+    }
+
+    public boolean  validarProductoSolicitado(String ProductoBuscado){
+        for(Productos objProductos:getListaProductos()){
+            if(objProductos.getNombreProd().equals(ProductoBuscado)){
+                return  true;
+            }
+
+        }
+
+        return false;
     }
 }

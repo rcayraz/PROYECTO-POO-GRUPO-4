@@ -114,7 +114,7 @@ public class Cliente {
     }
 
     public void RegistrarPedido(String CodigoPedido,String PedidosRealizado,String Estados){
-        Pedidos objPedidos = new Pedidos( CodigoPedido,PedidosRealizado,Estados);
+        Pedidos objPedidos = new Pedidos(CodigoPedido,PedidosRealizado,Estados);
         listaPedidos.add(objPedidos);
 
     }
