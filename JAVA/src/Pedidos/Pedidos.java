@@ -1,34 +1,17 @@
 package Pedidos;
 
+import java.lang.invoke.StringConcatException;
 import java.util.Date;
 import java.util.Random;
 
-public class Pedidos extends Cliente {
+public class Pedidos  {
     private String CodigoPedido;
     private String PedidosRealizado;
     private String Estados;
 
-    public Pedidos(String codigoCliente, String nombres, String apellidos, String medioContacto, String direccion, String distrito, String telefono, String correo, String codigoPedido, String pedidosRealizado, String estados) {
-        super(codigoCliente, nombres, apellidos, medioContacto, direccion, distrito, telefono, correo);
+    public Pedidos(String codigoPedido, String pedidosRealizado, String estados) {
         CodigoPedido = codigoPedido;
         PedidosRealizado = pedidosRealizado;
-        Estados = estados;
-    }
-
-    public Pedidos() {
-
-    }
-
-
-    public void setCodigoPedido(String codigoPedido) {
-        CodigoPedido = codigoPedido;
-    }
-
-    public void setPedidosRealizado(String pedidosRealizado) {
-        PedidosRealizado = pedidosRealizado;
-    }
-
-    public void setEstados(String estados) {
         Estados = estados;
     }
 
@@ -36,12 +19,24 @@ public class Pedidos extends Cliente {
         return CodigoPedido;
     }
 
+    public void setCodigoPedido(String codigoPedido) {
+        CodigoPedido = codigoPedido;
+    }
+
     public String getPedidosRealizado() {
         return PedidosRealizado;
     }
 
+    public void setPedidosRealizado(String pedidosRealizado) {
+        PedidosRealizado = pedidosRealizado;
+    }
+
     public String getEstados() {
         return Estados;
+    }
+
+    public void setEstados(String estados) {
+        Estados = estados;
     }
 
     @Override
@@ -50,8 +45,9 @@ public class Pedidos extends Cliente {
                 "CodigoPedido='" + CodigoPedido + '\'' +
                 ", PedidosRealizado='" + PedidosRealizado + '\'' +
                 ", Estados='" + Estados + '\'' +
-                "} " + super.toString();
+                '}';
     }
-    
-
+    public boolean ValidarPedido(){
+        return true;
+    }
 }

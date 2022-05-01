@@ -90,7 +90,7 @@ public class Main {
         int seleccionMenu = scan.nextInt();
         switch (seleccionMenu) {
             case 1 : AgregarProductos(); break;
-            case 2 : AgregarPedidos();break;
+            //case 2 : AgregarPedidos();break;
            // case 3 : reporteEnviosDiarios();break;
             case 4 : reporteClientes();break;
             case 5 : menuLogin(); break;
@@ -111,17 +111,7 @@ public class Main {
         ingresoMenuEjecutivo();
     }
 
-    public static  void AgregarPedidos(){
-        GestionPedidos objpedidos=new GestionPedidos();
-        Pedidos objpedido1= new Pedidos("60264162","Roberto","Ayra",
-                "instagram","av rio 55","rimac","9785462","ayra.zevallos@mail.com",
-                "PEDIDO60267465-1","PC GAMER","Ingresado");
 
-        objpedidos.AgregarPedido(objpedido1);
-         //objpedidos.ListarClientes();
-        objpedidos.ListarPedidos();
-        ingresoMenuEjecutivo();
-    }
 
     public static void AgregarProductos(){
         ArtefactosElec p1 = new ArtefactosElec("AECOMAG4QH","Cocina a gas Mabe 4hornillas",699.00,2);
