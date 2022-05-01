@@ -113,13 +113,13 @@ public class Main {
 
 
 
-    public static void AgregarProductos(){
-        ArtefactosElec p1 = new ArtefactosElec("AECOMAG4QH","Cocina a gas Mabe 4hornillas",699.00,2);
-        ArtefactosElec p2 = new ArtefactosElec("AETVLG55FHD","TV LG de 55pulg. UHD 4K Smart",1900.00,1);
-        ropaYcalzado p3 = new ropaYcalzado("RCPAJDAS","Pantalon jean para dama, talla small",150.00,5);
-        ropaYcalzado p4 = new ropaYcalzado("RCCAJHOcP","Casaca jean hombre con peluche",230.00,1);
-        Muebles p5 = new Muebles("MUJCO6MACA","Juego de comedor 6 sillas, en Caoba",1600.00,0);
-        Muebles p6 = new Muebles("MUMTV65ORG","Mesa de TV 65pulg. Con organizador",750.00,3);
+    public static void AgregarProductos() {
+        ArtefactosElec p1 = new ArtefactosElec("AECOMAG4QH", "Cocina a gas Mabe 4hornillas", 699.00);
+        ArtefactosElec p2 = new ArtefactosElec("AETVLG55FHD", "TV LG de 55pulg. UHD 4K Smart", 1900.00);
+        ropaYcalzado p3 = new ropaYcalzado("RCPAJDAS", "Pantalon jean para dama, talla small", 150.00);
+        ropaYcalzado p4 = new ropaYcalzado("RCCAJHOcP", "Casaca jean hombre con peluche", 230.00);
+        Muebles p5 = new Muebles("MUJCO6MACA", "Juego de comedor 6 sillas, en Caoba", 1600.00);
+        Muebles p6 = new Muebles("MUMTV65ORG", "Mesa de TV 65pulg. Con organizador", 750.00);
 
         Empresa empresa = new Empresa();
         empresa.registrar(p1);
@@ -128,17 +128,18 @@ public class Main {
         empresa.registrar(p4);
         empresa.registrar(p5);
         empresa.registrar(p6);
+        /*
         for (Productos p: empresa.getArregloProductos()) {
             System.out.println(p.toString());
-        }
-        ingresoMenuEjecutivo();
-    }
+        }*/
 
-    empresa.imprimirProductos();
+        ingresoMenuEjecutivo();
+
+
+        empresa.imprimirProductos();
 
         System.out.println("=============================================================\n" +
                 "=============================================================");
-
         empresa.imprimirArtefactos();
 
         System.out.println("=============================================================\n" +
@@ -150,9 +151,7 @@ public class Main {
                 "=============================================================");
 
         empresa.imprimirMuebles();
-}
-
-
+    }
 
 
     public static void AgregarCliente() {
@@ -162,18 +161,9 @@ public class Main {
         objCliente.setNombres("ROSA MARIA");
         objCliente.setCorreo("marlenni@gmail.com");
         objCliente.setTelefono("9875487");
-        objpedidos.AgregarCliente(objCliente);
-        objpedidos.ListarClientes();
+        //objpedidos.AgregarCliente(objCliente);
+        //objpedidos.ListarClientes();
     }
 
-
-
-
-
-
-
-
-
-    }
 
 }

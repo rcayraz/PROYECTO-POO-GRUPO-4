@@ -26,6 +26,10 @@ public class Cliente {
         listaPedidos = new ArrayList<>();
     }
 
+    public Cliente() {
+
+    }
+
     @Override
     public String toString() {
         return "Cliente{" +

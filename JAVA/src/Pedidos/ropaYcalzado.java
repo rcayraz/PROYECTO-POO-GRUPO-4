@@ -3,13 +3,11 @@ package Pedidos;
 
 public class ropaYcalzado extends Productos {
 
-    public ropaYCalzado(String codigo, String nombreProd, double precio) {
+    public ropaYcalzado(String codigo, String nombreProd, double precio) {
         super(codigo, nombreProd, precio);
     }
 
-        @Override
-        public String toString() {
-            return "ropaYcalzado{} " + super.toString();
-        }
+    @Override
+        public String toString() { return "ropaYcalzado{} " + super.toString(); }
  }
 

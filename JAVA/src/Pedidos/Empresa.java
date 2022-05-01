@@ -3,7 +3,6 @@ import java.util.ArrayList;
 import java.util.List;
 
 
-
 public class Empresa {
     private List<Productos> arregloProductos;
     private List<Productos> arregloArtElectricos;
@@ -24,13 +23,15 @@ public class Empresa {
         arregloProductos.add(productos);
     }
 
-    public List<Productos> getArregloProductos() {
-        return arregloProductos;
-    }
+    public List<Productos> getArregloProductos() { return arregloProductos; }
 
-    public List<Productos> getArregloArtElectricos() {
-        return  arregloArtElectricos;
-    }
+    public List<Productos> getArregloArtElectricos() { return  arregloArtElectricos; }
+
+    public List<Productos> getArregloRopaycalzado() { return  arregloArtElectricos; }
+
+    public List<Productos> getArregloMuebles() { return  arregloMuebles; }
+
+
 
     public void imprimirProductos() {
         for (Productos p: arregloProductos) {
