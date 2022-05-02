@@ -75,6 +75,7 @@ public class Pedidos  {
     public boolean  validarProductoSolicitado(String ProductoBuscado){
         for(Productos objProductos:getListaProductos()){
             if(objProductos.getNombreProd().equals(ProductoBuscado)){
+                ListaProductos.add(objProductos);
                 return  true;
             }
 

@@ -59,7 +59,7 @@ public class Main {
         System.out.println("==========================================================");
         System.out.println("Menú Administrador");
         System.out.println("==========================================================");
-        System.out.println("[1] Actualización de Precios");
+        System.out.println("[1] Registro de productos");
         System.out.println("[2] Reporte de Productos");
         System.out.println("[3] Reporte General de envíos");
         System.out.println("[4] Cerrar Sesión");
@@ -67,7 +67,7 @@ public class Main {
         Scanner scan = new Scanner(System.in);
         int seleccionMenu = scan.nextInt();
         switch (seleccionMenu) {
-           // case 1 : actualizacionTarifas(); break;
+             case 1 : AgregarProductos(); break;
            // case 2 : reporteTarifas();break;
            // case 3 : reporteGeneralEnvios();break;
             case 4 : menuLogin(); break;
@@ -99,20 +99,6 @@ public class Main {
         }
     }
 
-    public static void reporteClientes() {
-        System.out.println("=".repeat(85));
-        System.out.println("\t\t\t\t LISTA DE CLIENTES" );
-        System.out.println("=".repeat(85));
-        System.out.println("-".repeat(85));
-        System.out.printf("|%-20s|%-20s|%-20s|%-20s|\n", "Nombre y Apellidos   ", "DNI", "Correo", "Telefono");
-        System.out.println("-".repeat(85));
-
-        //objpedidos.ListarClientes();
-        AgregarCliente();
-        ingresoMenuEjecutivo();
-    }
-
-
     public static  void RegistroClientes(){
         GestionPedidos objGestionPedidos= new GestionPedidos();
         objGestionPedidos.RegistrarCliente("60267465","ROBERTO CARLOS","AYRA ZEVALLOS","FACEBOOK","AV LA MARINA 12","SAN MIGUEL","96545856","ayra.zevallos@mail.com");
@@ -128,22 +114,80 @@ public class Main {
         System.out.println(objGestionPedidos.toString());
 
 
+        System.out.println("Clientes Registrados");
+        AsignarPedidos();
+        System.out.println("Pedidos Asignados a los clientes");
+
+        ingresoMenuEjecutivo();
     }
+
+
+    public static void reporteClientes() {
+        System.out.println("=".repeat(85));
+        System.out.println("\t\t\t\t LISTA DE CLIENTES" );
+        System.out.println("=".repeat(85));
+        System.out.println("-".repeat(85));
+        System.out.printf("|%-20s|%-20s|%-20s|%-20s|\n","DNI: ", "Nombres","Apellidos", "MedioContacto", "Direccion", "Distrito","Telefono");
+        System.out.println("-".repeat(85));
+
+        //objpedidos.ListarClientes();
+        RegistroClientes();
+        ingresoMenuAdministrador();
+    }
+
+    public static void ReportePedidos() {
+        System.out.println("=".repeat(85));
+        System.out.println("\t\t\t\t LISTA DE PEDIDOS INGRESADOS POR CLIENTE" );
+        System.out.println("=".repeat(80));
+        System.out.println("-".repeat(85));
+        System.out.printf("|%-20s|%-20s|%-20s|%-20s|\n","DNI: ", "Codigo Pedido","Pedido Solicitado", "Estado de Solicitud");
+        System.out.println("-".repeat(85));
+
+        //objpedidos.ListarClientes();
+        AsignarPedidos();
+        ingresoMenuAdministrador();
+
+    }
+
+    public static void ReporteVentas() {
+
+        System.out.println("=".repeat(85));
+        System.out.println("\t\t\t\t REPORTE VENTAS" );
+        System.out.println("=".repeat(80));
+        System.out.println("-".repeat(85));
+        System.out.printf("|%-20s|%-20s|%-20s|%-20s|\n","Codigo Cliente: ", "Pedido Solitado", "Estado","Codigo Venta","FechaVenta","Cantidad","Precio Producto","Precio FInal");
+        System.out.println("-".repeat(85));
+
+        ingresarVentas();
+
+        ingresoMenuAdministrador();}
+
+
+        public static  void ingresarVentas(){
+        Ventas obVentas = new Ventas("PED0001","Cocina a gas Mabe 4hornillas","Vendido","V000123","02-02-2022",1,699.1,705.1);
+        Ventas obVentas1 = new Ventas("PED0002","V LG de 55pulg. UHD 4K Smar","Vendido","V000124","02-05-2022",1,1900.00,1905.00);
+        Ventas obVentas2 = new Ventas("PED0003","Casaca jean hombre con peluches","Vendido","V000125","02-08-2022",1,230.00,235.00);
+        obVentas.toString();
+            obVentas1.toString();
+            obVentas2.toString();
+
+        ingresoMenuEjecutivo();
+    }
+
+
 
     public  static  void AsignarPedidos(){
         GestionPedidos objGestionPedidos= new GestionPedidos();
         objGestionPedidos.AsignarPedidoCliente("60267465","PED0001","PC GAMER","ingresado");
-        objGestionPedidos.AsignarPedidoCliente("26656456","PED0002","PC ESCRITORIO","Aceptado");
-        objGestionPedidos.AsignarPedidoCliente("54556323","PED0003","PANTALONES TALLA 30","Aceptado");
-        objGestionPedidos.AsignarPedidoCliente("60267465","PED0004","SILLA GAMER","Aceptado");
+        objGestionPedidos.AsignarPedidoCliente("26656456","PED0002","Cocina a gas Mabe 4hornillas","Aceptado");
+        objGestionPedidos.AsignarPedidoCliente("54556323","PED0003","TV LG de 55pulg. UHD 4K Smar","Aceptado");
+        objGestionPedidos.AsignarPedidoCliente("60267465","PED0004","Casaca jean hombre con peluche","Aceptado");
         objGestionPedidos.AsignarPedidoCliente("26746552","PED005","ESCRITORIO DE OFICINA","Rechazado");
         System.out.println(objGestionPedidos.toString());
     }
 
 
     public static void AgregarProductos() {
-
-
         ArtefactosElec p1 = new ArtefactosElec("AECOMAG4QH", "Cocina a gas Mabe 4hornillas", 699.00);
         ArtefactosElec p2 = new ArtefactosElec("AETVLG55FHD", "TV LG de 55pulg. UHD 4K Smart", 1900.00);
         ropaYcalzado p3 = new ropaYcalzado("RCPAJDAS", "Pantalon jean para dama, talla small", 150.00);
@@ -163,38 +207,19 @@ public class Main {
         for (Productos p: empresa.getArregloProductos()) {
             System.out.println(p.toString());
         }*/
+        System.out.println("***********************************");
+        System.out.println("Productos Registrados");
 
         ingresoMenuEjecutivo();
 
 
-        empresa.imprimirProductos();
 
-        System.out.println("=============================================================\n" +
-                "=============================================================");
-        empresa.imprimirArtefactos();
-
-        System.out.println("=============================================================\n" +
-                "=============================================================");
-
-        empresa.imprimirRopa();
-
-        System.out.println("=============================================================\n" +
-                "=============================================================");
-
-        empresa.imprimirMuebles();
     }
 
 
-    public static void AgregarCliente() {
-        Cliente objCliente = new Cliente();
-        objCliente.setCodigoCliente("45124512");
-        objCliente.setApellidos("PEREZ ZAPATA");
-        objCliente.setNombres("ROSA MARIA");
-        objCliente.setCorreo("marlenni@gmail.com");
-        objCliente.setTelefono("9875487");
-        //objpedidos.AgregarCliente(objCliente);
-        //objpedidos.ListarClientes();
-    }
+
+
+
 
 
 }

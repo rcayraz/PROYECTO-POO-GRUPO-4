@@ -30,6 +30,7 @@ public class GestionPedidos {
         ListaCliente.add(objCliente);
     }
 
+
     public void AsignarPedidoCliente(String codigoCliente,String codigoPedido,String pedidosRealizado,String estados){
         for (Cliente obClient:ListaCliente){
             if(obClient.getCodigoCliente().equals("codigoCliente")){
