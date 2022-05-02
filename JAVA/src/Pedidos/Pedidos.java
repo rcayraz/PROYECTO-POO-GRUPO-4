@@ -72,7 +72,7 @@ public class Pedidos  {
         ListaProductos = listaProductos;
     }
 
-    public boolean  validarProductoSolicitado(String ProductoBuscado){
+ /*   public boolean  validarProductoSolicitado(String ProductoBuscado){
         for(Productos objProductos:getListaProductos()){
             if(objProductos.getNombreProd().equals(ProductoBuscado)){
                 ListaProductos.add(objProductos);
@@ -82,5 +82,5 @@ public class Pedidos  {
         }
 
         return false;
-    }
+    }*/
 }

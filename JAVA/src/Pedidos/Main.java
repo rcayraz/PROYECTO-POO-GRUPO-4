@@ -81,8 +81,8 @@ public class Main {
         Scanner scan = new Scanner(System.in);
         int seleccionMenu = scan.nextInt();
         switch (seleccionMenu) {
-             case 1 : AgregarProductos(); break;
-              case 2 : reporteClientes();break;
+            case 1 : AgregarProductos(); break;
+            case 2 : reporteClientes();break;
             case 3 : ReporteVentas();break;
             case 4 : menuLogin(); break;
             default: System.out.println("Seleccionar una opción correcta");break;
@@ -97,18 +97,14 @@ public class Main {
         System.out.println("==========================================================");
         System.out.println("[1] Lista de Productos");
         System.out.println("[2] Registro de Pedidos");
-        System.out.println("[3] Reporte de Envíos diarios");
-        System.out.println("[4] Reporte de Clientes");
-        System.out.println("[5] Cerrar Sesión");
+        System.out.println("[3] Cerrar Sesión");
         System.out.println("Seleccione una opción: ");
         Scanner scan = new Scanner(System.in);
         int seleccionMenu = scan.nextInt();
         switch (seleccionMenu) {
             case 1 : AgregarProductos();break;
             case 2 : RegistroClientes();break;
-            case 3 : AsignarPedidos();break;
-            case 4 : reporteClientes();break;
-            case 5 : menuLogin(); break;
+            case 3 : menuLogin(); break;
             default: System.out.println("Seleccionar una opción correcta");break;
         }
     }
@@ -145,7 +141,7 @@ public class Main {
         System.out.println("-".repeat(85));
 
         //objpedidos.ListarClientes();
-        RegistroClientes();
+        //RegistroClientes();
         ingresoMenuAdministrador();
     }
 
@@ -203,21 +199,21 @@ public class Main {
 
 
     public static void AgregarProductos() {
-        ArtefactosElec p1 = new ArtefactosElec("AECOMAG4QH", "Cocina a gas Mabe 4hornillas", 699.00);
-        ArtefactosElec p2 = new ArtefactosElec("AETVLG55FHD", "TV LG de 55pulg. UHD 4K Smart", 1900.00);
-        ropaYcalzado p3 = new ropaYcalzado("RCPAJDAS", "Pantalon jean para dama, talla small", 150.00);
-        ropaYcalzado p4 = new ropaYcalzado("RCCAJHOcP", "Casaca jean hombre con peluche", 230.00);
-        Muebles p5 = new Muebles("MUJCO6MACA", "Juego de comedor 6 sillas, en Caoba", 1600.00);
-        Muebles p6 = new Muebles("MUMTV65ORG", "Mesa de TV 65pulg. Con organizador", 750.00);
+        ArtefactosElec a1 = new ArtefactosElec("AECOMAG4QH", "Cocina a gas Mabe 4hornillas", 699.00,"Artefactos");
+        ArtefactosElec a2 = new ArtefactosElec("AETVLG55FHD", "TV LG de 55pulg. UHD 4K Smart", 1900.00,"Artefactos");
+        ropaYcalzado r1 = new ropaYcalzado("RCPAJDAS", "Pantalon jean para dama, talla small", 150.00,"Ropa");
+        ropaYcalzado r2 = new ropaYcalzado("RCCAJHOcP", "Casaca jean hombre con peluche", 230.00,"Ropa");
+        Muebles m1 = new Muebles("MUJCO6MACA", "Juego de comedor 6 sillas, en Caoba", 1600.00,"Muebles");
+        Muebles m2 = new Muebles("MUMTV65ORG", "Mesa de TV 65pulg. Con organizador", 750.00,"Muebles");
 
 
         Empresa empresa = new Empresa();
-        empresa.registrar(p1);
-        empresa.registrar(p2);
-        empresa.registrar(p3);
-        empresa.registrar(p4);
-        empresa.registrar(p5);
-        empresa.registrar(p6);
+        empresa.registrar(a1);
+        empresa.registrar(a2);
+        empresa.registrar(r1);
+        empresa.registrar(r2);
+        empresa.registrar(m1);
+        empresa.registrar(m2);
 
         System.out.println(empresa.getArregloProductos().toString());
         /*

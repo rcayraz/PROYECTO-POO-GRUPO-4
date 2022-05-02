@@ -79,10 +79,10 @@ public class Ventas extends Pedidos{
             return 15.00;
         }
     }
-
+/*
     public Double PrecioNeto(){
 
         return getProductos().getPrecio()- Descuento();
 
-    }
+    }*/
 }

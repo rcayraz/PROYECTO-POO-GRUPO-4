@@ -5,8 +5,15 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="9f56f306-8552-4087-bec1-ab06d694d2a3" name="Changes" comment="">
+      <change beforePath="$PROJECT_DIR$/../.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/../.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/out/production/Proyecto_Gupo4r/Pedidos/Main.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/Proyecto_Gupo4r/Pedidos/Main.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/Pedidos/ArtefactosElec.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/Pedidos/ArtefactosElec.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/Pedidos/Main.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/Pedidos/Main.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/Pedidos/Muebles.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/Pedidos/Muebles.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/Pedidos/Pedidos.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/Pedidos/Pedidos.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/Pedidos/Productos.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/Pedidos/Productos.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/Pedidos/Ventas.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/Pedidos/Ventas.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/Pedidos/ropaYcalzado.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/Pedidos/ropaYcalzado.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -91,6 +98,7 @@
       <workItem from="1651375005267" duration="74000" />
       <workItem from="1651420808741" duration="4226000" />
       <workItem from="1651456674346" duration="4891000" />
+      <workItem from="1651502202577" duration="7165000" />
     </task>
     <servers />
   </component>

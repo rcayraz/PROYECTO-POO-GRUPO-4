@@ -1,18 +1,15 @@
 package Pedidos;
 // se agrego el avanze de Abel
-public abstract class Productos {
+ public abstract class Productos {
     private String codigo;
-    private String nombreProd;
-    private double precio;
     private String tipoProducto;
 
     public Productos() {
     }
 
-    public Productos(String codigo, String nombreProd, double precio) {
+    public Productos(String codigo, String tipoProducto) {
         this.codigo = codigo;
-        this.nombreProd = nombreProd;
-        this.precio = precio;
+        this.tipoProducto = tipoProducto;
         establecerTipoProducto();
     }
 
@@ -24,23 +21,13 @@ public abstract class Productos {
         return codigo;
     }
 
-    public String getNombreProd() {
-        return nombreProd;
-    }
-
-    public double getPrecio() {
-        return precio;
-    }
-
 
 
 
     @Override
     public String toString() {
-        return "Productos{" +
+        return "\nProductos{" +
                 "codigo='" + codigo + '\'' +
-                ", nombreProd='" + nombreProd + '\'' +
-                ", precio=" + precio +
                 ", tipoProducto='" + tipoProducto + '\'' +
                 '}';
     }
