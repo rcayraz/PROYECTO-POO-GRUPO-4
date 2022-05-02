@@ -73,7 +73,7 @@ public class Main {
         System.out.println("==========================================================");
         System.out.println("Menú Administrador");
         System.out.println("==========================================================");
-        System.out.println("[1] Registro de productos");
+        System.out.println("[1] Registro de Productos");
         System.out.println("[2] Reporte de Clientes");
         System.out.println("[3] Reporte Ventas");
         System.out.println("[4] Cerrar Sesión");
@@ -95,16 +95,20 @@ public class Main {
         System.out.println("==========================================================");
         System.out.println("Menú de Ventas");
         System.out.println("==========================================================");
-        System.out.println("[1] Lista de Productos");
-        System.out.println("[2] Registro de Pedidos");
+        System.out.println("[1] Reporte de Clientes");
+        System.out.println("[2] Pedidos");
         System.out.println("[3] Cerrar Sesión");
+
         System.out.println("Seleccione una opción: ");
         Scanner scan = new Scanner(System.in);
         int seleccionMenu = scan.nextInt();
         switch (seleccionMenu) {
-            case 1 : AgregarProductos();break;
-            case 2 : RegistroClientes();break;
-            case 3 : menuLogin(); break;
+            case 1 : RegistroClientes();break;
+            case 2 : AsignarPedidos(); break;
+            //case 2 : ReportePedidos(); break;
+            case 3: menuLogin(); break;
+
+
             default: System.out.println("Seleccionar una opción correcta");break;
         }
     }
@@ -133,15 +137,15 @@ public class Main {
 
 
     public static void reporteClientes() {
-        System.out.println("=".repeat(85));
+        System.out.println("=".repeat(150));
         System.out.println("\t\t\t\t LISTA DE CLIENTES" );
-        System.out.println("=".repeat(85));
-        System.out.println("-".repeat(85));
-        System.out.printf("|%-20s|%-20s|%-20s|%-20s|\n","DNI: ", "Nombres","Apellidos", "MedioContacto", "Direccion", "Distrito","Telefono");
-        System.out.println("-".repeat(85));
+        System.out.println("=".repeat(150));
+        System.out.println("-".repeat(150));
+        System.out.printf("|%-20s|%-20s|%-20s|%-20s|%-20s|%-20s|\n","DNI: ", "Nombres","Apellidos", "MedioContacto", "Direccion", "Distrito","Telefono");
+        System.out.println("-".repeat(150));
 
         //objpedidos.ListarClientes();
-        //RegistroClientes();
+        RegistroClientes();
         ingresoMenuAdministrador();
     }
 
@@ -155,18 +159,18 @@ public class Main {
 
         //objpedidos.ListarClientes();
         AsignarPedidos();
-        ingresoMenuAdministrador();
+        ingresoMenuEjecutivo();
 
     }
 
     public static void ReporteVentas() {
 
-        System.out.println("=".repeat(85));
+        System.out.println("=".repeat(100));
         System.out.println("\t\t\t\t REPORTE VENTAS" );
-        System.out.println("=".repeat(80));
-        System.out.println("-".repeat(85));
-        System.out.printf("|%-20s|%-20s|%-20s|%-20s|\n","Codigo Cliente: ", "Pedido Solitado", "Estado","Codigo Venta","FechaVenta","Cantidad","Precio Producto","Precio FInal");
-        System.out.println("-".repeat(85));
+        System.out.println("=".repeat(100));
+        System.out.println("-".repeat(100));
+        System.out.printf("|%-20s|%-20s|%-20s|%-20s|\n","Codigo de Ventas: ", "Fecha","Precio Producto","Precio FInal");
+        System.out.println("-".repeat(100));
 
         ingresarVentas();
 
@@ -174,9 +178,9 @@ public class Main {
 
 
         public static  void ingresarVentas(){
-        Ventas obVentas = new Ventas("PED0001","Cocina a gas Mabe 4hornillas","Vendido","V000123","02-02-2022",1,699.1,705.1);
+        Ventas obVentas = new Ventas("PED0001","Cocina a gas Mabe 4hornillas","Vendido","V000123","02-02-2022",2,699.1,705.1);
         Ventas obVentas1 = new Ventas("PED0002","V LG de 55pulg. UHD 4K Smar","Vendido","V000124","02-05-2022",1,1900.00,1905.00);
-        Ventas obVentas2 = new Ventas("PED0003","Casaca jean hombre con peluches","Vendido","V000125","02-08-2022",1,230.00,235.00);
+        Ventas obVentas2 = new Ventas("PED0003","Casaca jean hombre con peluches","Vendido","V000125","02-08-2022",2,230.00,235.00);
 
             System.out.println(obVentas);
             System.out.println(obVentas1);
@@ -195,6 +199,8 @@ public class Main {
         objGestionPedidos.AsignarPedidoCliente("60267465","PED0004","Casaca jean hombre con peluche","Aceptado");
         objGestionPedidos.AsignarPedidoCliente("26746552","PED005","ESCRITORIO DE OFICINA","Rechazado");
         System.out.println(objGestionPedidos.toString());
+        System.out.println("Pedidos Asignados");
+        ingresoMenuEjecutivo();
     }
 
 

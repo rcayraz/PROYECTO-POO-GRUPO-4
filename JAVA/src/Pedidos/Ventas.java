@@ -18,13 +18,13 @@ public class Ventas extends Pedidos{
 
     @Override
     public String toString() {
-        return "IngresoVentas{" +
-                "CodigoVenta='" + CodigoVenta + '\'' +
-                ", FechaVenta='" + FechaVenta + '\'' +
-                ", Cantidad=" + Cantidad +
-                ", PrecioBruto=" + PrecioBruto +
-                ", PrecioNeto=" + PrecioNeto +
-                "} " + super.toString();
+        return "" +
+                "" + CodigoVenta + '\'' +
+                "" + FechaVenta + '\'' +
+                "" + Cantidad +
+                "" + PrecioBruto +
+                "" + PrecioNeto +
+                "} " .toString();
     }
 
     public String getCodigoVenta() {

@@ -32,16 +32,14 @@ public class Cliente {
 
     @Override
     public String toString() {
-        return "Cliente{" +
-                "CodigoCliente='" + CodigoCliente + '\'' +
-                ", Nombres='" + Nombres + '\'' +
-                ", Apellidos='" + Apellidos + '\'' +
-                ", MedioContacto='" + MedioContacto + '\'' +
-                ", Direccion='" + Direccion + '\'' +
-                ", Distrito='" + Distrito + '\'' +
-                ", Telefono='" + Telefono + '\'' +
-                ", Correo='" + Correo + '\'' +
-                ", listaPedidos=" + listaPedidos +
+        return "\n " + CodigoCliente + '\'' +
+                ", " + Nombres + '\'' +
+                ", " + Apellidos + '\'' +
+                ", " + MedioContacto + '\'' +
+                ", " + Direccion + '\'' +
+                ", " + Distrito + '\'' +
+                ", " + Telefono + '\'' +
+                ", " + Correo + '\'' +
                 '}';
     }
 
