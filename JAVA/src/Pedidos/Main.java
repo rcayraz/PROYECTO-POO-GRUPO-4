@@ -1,8 +1,22 @@
 package Pedidos;
 
+import java.util.ArrayList;
+import java.util.List;
 import java.util.Scanner;
 
 public class Main {
+    private static List<Productos> arregloProductos;
+
+    public Main() {
+        this.arregloProductos = new ArrayList<>();
+    }
+
+    public static void imprimirProductos() {
+        for (Productos p: arregloProductos) {
+            System.out.println(p);
+        }
+    }
+
     public static String[][] usuarios = {{"Admin", "Administrador", "1234"}, {"Ventas", "Vendedor", "12345"}};
     public static GestionPedidos objpedidos;
     public static void main(String[] args) {
@@ -90,7 +104,7 @@ public class Main {
         Scanner scan = new Scanner(System.in);
         int seleccionMenu = scan.nextInt();
         switch (seleccionMenu) {
-            case 1 : AgregarProductos(); break;
+            case 1 : imprimirProductos();break;
             case 2 : RegistroClientes();break;
             case 3 : AsignarPedidos();break;
             case 4 : reporteClientes();break;
@@ -213,11 +227,7 @@ public class Main {
         ingresoMenuEjecutivo();
 
 
-
     }
-
-
-
 
 
 
