@@ -1,0 +1,122 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="AutoImportSettings">
+    <option name="autoReloadType" value="SELECTIVE" />
+  </component>
+  <component name="ChangeListManager">
+    <list default="true" id="9f56f306-8552-4087-bec1-ab06d694d2a3" name="Changes" comment="">
+      <change beforePath="$PROJECT_DIR$/../.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/../.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/Proyecto_Gupo4r/Pedidos/Main.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/Proyecto_Gupo4r/Pedidos/Main.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/Pedidos/ArtefactosElec.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/Pedidos/ArtefactosElec.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/Pedidos/Main.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/Pedidos/Main.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/Pedidos/Muebles.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/Pedidos/Muebles.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/Pedidos/Pedidos.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/Pedidos/Pedidos.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/Pedidos/Productos.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/Pedidos/Productos.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/Pedidos/Ventas.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/Pedidos/Ventas.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/Pedidos/ropaYcalzado.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/Pedidos/ropaYcalzado.java" afterDir="false" />
+    </list>
+    <option name="SHOW_DIALOG" value="false" />
+    <option name="HIGHLIGHT_CONFLICTS" value="true" />
+    <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
+    <option name="LAST_RESOLUTION" value="IGNORE" />
+  </component>
+  <component name="FileTemplateManagerImpl">
+    <option name="RECENT_TEMPLATES">
+      <list>
+        <option value="Class" />
+      </list>
+    </option>
+  </component>
+  <component name="Git.Settings">
+    <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$/.." />
+  </component>
+  <component name="MarkdownSettingsMigration">
+    <option name="stateVersion" value="1" />
+  </component>
+  <component name="ProjectId" id="288AGp0Lpxuupt6oZgRQk4oEMpU" />
+  <component name="ProjectLevelVcsManager" settingsEditedManually="true">
+    <ConfirmationsSetting value="2" id="Add" />
+  </component>
+  <component name="ProjectViewState">
+    <option name="hideEmptyMiddlePackages" value="true" />
+    <option name="showLibraryContents" value="true" />
+  </component>
+  <component name="PropertiesComponent">
+    <property name="ASKED_ADD_EXTERNAL_FILES" value="true" />
+    <property name="RunOnceActivity.OpenProjectViewOnStart" value="true" />
+    <property name="RunOnceActivity.ShowReadmeOnStart" value="true" />
+    <property name="WebServerToolWindowFactoryState" value="false" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$" />
+    <property name="node.js.detected.package.eslint" value="true" />
+    <property name="node.js.detected.package.tslint" value="true" />
+    <property name="node.js.selected.package.eslint" value="(autodetect)" />
+    <property name="node.js.selected.package.tslint" value="(autodetect)" />
+    <property name="project.structure.last.edited" value="Modules" />
+    <property name="project.structure.proportion" value="0.0" />
+    <property name="project.structure.side.proportion" value="0.0" />
+  </component>
+  <component name="RunManager" selected="Application.Main (1)">
+    <configuration name="Main (1)" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+      <option name="MAIN_CLASS_NAME" value="Pedidos.Main" />
+      <module name="Proyecto_Gupo4r" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="Pedidos.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="Main" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+      <option name="MAIN_CLASS_NAME" value="Main" />
+      <module name="Proyecto_Gupo4r" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <recent_temporary>
+      <list>
+        <item itemvalue="Application.Main (1)" />
+        <item itemvalue="Application.Main" />
+      </list>
+    </recent_temporary>
+  </component>
+  <component name="SpellCheckerSettings" RuntimeDictionaries="0" Folders="0" CustomDictionaries="0" DefaultDictionary="application-level" UseSingleDictionary="true" transferred="true" />
+  <component name="TaskManager">
+    <task active="true" id="Default" summary="Default task">
+      <changelist id="9f56f306-8552-4087-bec1-ab06d694d2a3" name="Changes" comment="" />
+      <created>1650587746163</created>
+      <option name="number" value="Default" />
+      <option name="presentableId" value="Default" />
+      <updated>1650587746163</updated>
+      <workItem from="1650587747556" duration="368000" />
+      <workItem from="1650588266788" duration="5000" />
+      <workItem from="1650588472898" duration="686000" />
+      <workItem from="1650756634127" duration="2369000" />
+      <workItem from="1651375005267" duration="74000" />
+      <workItem from="1651420808741" duration="4226000" />
+      <workItem from="1651456674346" duration="4891000" />
+      <workItem from="1651502202577" duration="7165000" />
+    </task>
+    <servers />
+  </component>
+  <component name="TypeScriptGeneratedFilesManager">
+    <option name="version" value="3" />
+  </component>
+  <component name="Vcs.Log.Tabs.Properties">
+    <option name="TAB_STATES">
+      <map>
+        <entry key="MAIN">
+          <value>
+            <State />
+          </value>
+        </entry>
+      </map>
+    </option>
+  </component>
+  <component name="VcsManagerConfiguration">
+    <option name="ADD_EXTERNAL_FILES_SILENTLY" value="true" />
+  </component>
+</project>

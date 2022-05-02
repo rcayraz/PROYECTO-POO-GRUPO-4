@@ -1,0 +1,73 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="AutoImportSettings">
+    <option name="autoReloadType" value="SELECTIVE" />
+  </component>
+  <component name="ChangeListManager">
+    <list default="true" id="823ce9f3-5723-4fef-b29b-27d0c34a0193" name="Changes" comment="">
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/JAVA/out/production/Proyecto_Gupo4r/Pedidos/Main.class" beforeDir="false" afterPath="$PROJECT_DIR$/JAVA/out/production/Proyecto_Gupo4r/Pedidos/Main.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/JAVA/src/Pedidos/ArtefactosElec.java" beforeDir="false" afterPath="$PROJECT_DIR$/JAVA/src/Pedidos/ArtefactosElec.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/JAVA/src/Pedidos/Main.java" beforeDir="false" afterPath="$PROJECT_DIR$/JAVA/src/Pedidos/Main.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/JAVA/src/Pedidos/Muebles.java" beforeDir="false" afterPath="$PROJECT_DIR$/JAVA/src/Pedidos/Muebles.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/JAVA/src/Pedidos/Pedidos.java" beforeDir="false" afterPath="$PROJECT_DIR$/JAVA/src/Pedidos/Pedidos.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/JAVA/src/Pedidos/Productos.java" beforeDir="false" afterPath="$PROJECT_DIR$/JAVA/src/Pedidos/Productos.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/JAVA/src/Pedidos/Ventas.java" beforeDir="false" afterPath="$PROJECT_DIR$/JAVA/src/Pedidos/Ventas.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/JAVA/src/Pedidos/ropaYcalzado.java" beforeDir="false" afterPath="$PROJECT_DIR$/JAVA/src/Pedidos/ropaYcalzado.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Java/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/Java/.idea/workspace.xml" afterDir="false" />
+    </list>
+    <option name="SHOW_DIALOG" value="false" />
+    <option name="HIGHLIGHT_CONFLICTS" value="true" />
+    <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
+    <option name="LAST_RESOLUTION" value="IGNORE" />
+  </component>
+  <component name="Git.Settings">
+    <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
+  </component>
+  <component name="MarkdownSettingsMigration">
+    <option name="stateVersion" value="1" />
+  </component>
+  <component name="ProjectId" id="28WTQzatpdhrVWszXSZGnWLTrwl" />
+  <component name="ProjectViewState">
+    <option name="hideEmptyMiddlePackages" value="true" />
+    <option name="showLibraryContents" value="true" />
+  </component>
+  <component name="PropertiesComponent">
+    <property name="RunOnceActivity.OpenProjectViewOnStart" value="true" />
+    <property name="RunOnceActivity.ShowReadmeOnStart" value="true" />
+    <property name="WebServerToolWindowFactoryState" value="false" />
+    <property name="node.js.detected.package.eslint" value="true" />
+    <property name="node.js.detected.package.tslint" value="true" />
+    <property name="node.js.selected.package.eslint" value="(autodetect)" />
+    <property name="node.js.selected.package.tslint" value="(autodetect)" />
+    <property name="project.structure.last.edited" value="Artifacts" />
+    <property name="project.structure.proportion" value="0.15" />
+    <property name="project.structure.side.proportion" value="0.2" />
+  </component>
+  <component name="SpellCheckerSettings" RuntimeDictionaries="0" Folders="0" CustomDictionaries="0" DefaultDictionary="application-level" UseSingleDictionary="true" transferred="true" />
+  <component name="TaskManager">
+    <task active="true" id="Default" summary="Default task">
+      <changelist id="823ce9f3-5723-4fef-b29b-27d0c34a0193" name="Changes" comment="" />
+      <created>1651331330227</created>
+      <option name="number" value="Default" />
+      <option name="presentableId" value="Default" />
+      <updated>1651331330227</updated>
+      <workItem from="1651331332372" duration="92000" />
+      <workItem from="1651332299613" duration="797000" />
+      <workItem from="1651333111484" duration="38000" />
+      <workItem from="1651333165947" duration="671000" />
+      <workItem from="1651333854703" duration="5000" />
+      <workItem from="1651334018994" duration="288000" />
+      <workItem from="1651334319576" duration="2303000" />
+      <workItem from="1651373461629" duration="1003000" />
+      <workItem from="1651375396632" duration="700000" />
+      <workItem from="1651420616183" duration="5000" />
+      <workItem from="1651504684143" duration="5000" />
+      <workItem from="1651507736690" duration="675000" />
+    </task>
+    <servers />
+  </component>
+  <component name="TypeScriptGeneratedFilesManager">
+    <option name="version" value="3" />
+  </component>
+</project>
