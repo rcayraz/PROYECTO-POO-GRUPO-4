@@ -3,6 +3,7 @@ package Pedidos;
 
 public class Muebles extends Productos {
 
+
     public Muebles(String codigo, String nombreProd, double precio) {
         super(codigo, nombreProd, precio);
     }

@@ -3,6 +3,8 @@ package Pedidos;
 
 public class ropaYcalzado extends Productos {
 
+
+
     public ropaYcalzado(String codigo, String nombreProd, double precio) {
         super(codigo, nombreProd, precio);
     }

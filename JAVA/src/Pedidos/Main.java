@@ -74,16 +74,16 @@ public class Main {
         System.out.println("Menú Administrador");
         System.out.println("==========================================================");
         System.out.println("[1] Registro de productos");
-        System.out.println("[2] Reporte de Productos");
-        System.out.println("[3] Reporte General de envíos");
+        System.out.println("[2] Reporte de Clientes");
+        System.out.println("[3] Reporte Ventas");
         System.out.println("[4] Cerrar Sesión");
         System.out.println("Seleccione una opción: ");
         Scanner scan = new Scanner(System.in);
         int seleccionMenu = scan.nextInt();
         switch (seleccionMenu) {
              case 1 : AgregarProductos(); break;
-           // case 2 : reporteTarifas();break;
-           // case 3 : reporteGeneralEnvios();break;
+              case 2 : reporteClientes();break;
+            case 3 : ReporteVentas();break;
             case 4 : menuLogin(); break;
             default: System.out.println("Seleccionar una opción correcta");break;
         }
@@ -104,7 +104,7 @@ public class Main {
         Scanner scan = new Scanner(System.in);
         int seleccionMenu = scan.nextInt();
         switch (seleccionMenu) {
-            case 1 : imprimirProductos();break;
+            case 1 : AgregarProductos();break;
             case 2 : RegistroClientes();break;
             case 3 : AsignarPedidos();break;
             case 4 : reporteClientes();break;
@@ -181,12 +181,13 @@ public class Main {
         Ventas obVentas = new Ventas("PED0001","Cocina a gas Mabe 4hornillas","Vendido","V000123","02-02-2022",1,699.1,705.1);
         Ventas obVentas1 = new Ventas("PED0002","V LG de 55pulg. UHD 4K Smar","Vendido","V000124","02-05-2022",1,1900.00,1905.00);
         Ventas obVentas2 = new Ventas("PED0003","Casaca jean hombre con peluches","Vendido","V000125","02-08-2022",1,230.00,235.00);
-        obVentas.toString();
-            obVentas1.toString();
-            obVentas2.toString();
 
-        ingresoMenuEjecutivo();
-    }
+            System.out.println(obVentas);
+            System.out.println(obVentas1);
+            System.out.println(obVentas2);
+
+
+        }
 
 
 
@@ -217,6 +218,8 @@ public class Main {
         empresa.registrar(p4);
         empresa.registrar(p5);
         empresa.registrar(p6);
+
+        System.out.println(empresa.getArregloProductos().toString());
         /*
         for (Productos p: empresa.getArregloProductos()) {
             System.out.println(p.toString());
@@ -224,7 +227,7 @@ public class Main {
         System.out.println("***********************************");
         System.out.println("Productos Registrados");
 
-        ingresoMenuEjecutivo();
+        ingresoMenuAdministrador();
 
 
     }
